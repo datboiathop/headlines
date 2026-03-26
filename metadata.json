@@ -1,0 +1,5 @@
+{
+  "name": "Headline",
+  "description": "A minimalist news aggregator that fetches the latest global headlines using AI-powered search.",
+  "requestFramePermissions": []
+}
