@@ -5,8 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  // GitHub Pages project URLs look like: https://<user>.github.io/<repo>/
-  base: '/headlines/',
+  // When using a custom domain on GitHub Pages, the base should be '/'
+  base: '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, '.'),
