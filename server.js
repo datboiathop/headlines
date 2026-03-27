@@ -4,7 +4,7 @@ import Parser from 'rss-parser';
 
 const app = express();
 const parser = new Parser();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
@@ -151,6 +151,10 @@ app.get('/api/headlines', (req, res) => {
   
   // Return requested limit
   res.json(filtered.slice(0, limit));
+});
+
+app.get('/health', (_req, res) => {
+  res.status(200).send('ok');
 });
 
 app.listen(PORT, () => {
